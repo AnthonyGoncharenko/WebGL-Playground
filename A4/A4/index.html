@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="https://greggman.github.io/webgl-lint/webgl-lint.js" crossorigin></script>
+    <script type="text/javascript" src="./Common/initShaders2.js"></script>
+    <script type="text/javascript" src="./Common/MVnew.js"></script>
+    <script type="text/javascript" src="./drawable.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="./colors.js"></script>
+    <script type="text/javascript" src="./shapeBuildLogic.js"></script>
+
+</head>
+
+<body>
+    <canvas id="gl-canvas" width="512" height="512">
+        Not supported
+    </canvas>
+    <div onclick="toggleBoxRotation()">
+        <button id="box">
+            Toggle the Direction of Rotation!
+        </button>
+    </div>
+
+    <div class="slidecontainer">
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider">
+        <p style="margin-top: 0%" id="slider-text"></p>
+        </input>
+    </div>
+    <p>
+        Click the toggle button to reverse the rotation of the squares and triangle.
+    </p>
+    <p>
+        Move the slider to change the rotation and circle "breathing" speeds.
+    </p>
+</body>
+
+</html>
