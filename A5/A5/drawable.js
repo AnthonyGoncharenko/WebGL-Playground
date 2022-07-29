@@ -25,7 +25,6 @@ class Drawable {
         return this.modelMatrix;
     }
     initializeShaders(gl, vshader, fshader) {
-        console.log(this.name + ": " + vshader + " " + fshader);
         this.shaderProgram = initShaders(gl, vshader, fshader);
         return this;
     }
